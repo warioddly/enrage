@@ -28,5 +28,5 @@ try:
         print("\r[+] " + str(sent_messages) + " messages sent", end="")
         sent_messages += 1
 except KeyboardInterrupt:
-    print("[-] You Stopped Spam")    
+    print("\n[-] You Stopped Spam")    
 print("\n[+] Thanks for using OFF3\n")
