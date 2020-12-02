@@ -1,3 +1,4 @@
+
 import smtplib
 
 def send_spam(email, password, target_email, message):
@@ -21,8 +22,11 @@ except ValueError:
     amount = 10
 
 sent_messages = 1
-for i in range(amount):
-    send_spam(email, password, target_email, message)
-    print("\r[+] " + str(sent_messages) + " messages sent", end="")
-    sent_messages += 1
+try:
+    for i in range(amount):
+        send_spam(email, password, target_email, message)
+        print("\r[+] " + str(sent_messages) + " messages sent", end="")
+        sent_messages += 1
+except KeyboardInterrupt:
+    print("[-] You Stopped Spam")    
 print("\n[+] Thanks for using OFF3\n")
