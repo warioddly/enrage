@@ -12,11 +12,11 @@ def send_spam(email, password, target_email, message):
     server.sendmail(email, target_email, message)
     
 def check_login(email):
-    check = re.search("@gmail.com", email)
-    if check == "@gmail.com":
+    check = re.search("@gmail.com", email)  
+    if str(check) in "None":
+        email += "@gmail.com"
         return email
     else:
-        email = email + "@gmail.com"
         return email
 
 call(["clear"])
