@@ -8,8 +8,6 @@ def send_spam(email, password, target_email, message):
         server.login(email, password)
     except smtplib.SMTPAuthenticationError:
         print("[!] allow access for https://www.google.com/settings/security/lesssecureapps")
-    except smtplib.SMTPSenderRefused:
-        print("imo")
     server.sendmail(email, target_email, message)
 
 email = input("[+] inter your email > ")
