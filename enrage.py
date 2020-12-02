@@ -25,7 +25,7 @@ email = input("[+] inter your email > ")
 email = check_login(email)
 password = input("[+] inter your email password > ")
 target_email = input("[+] inter target email > ")
-check_login(target_email)
+target_email = check_login(target_email)
 message = input("[+] input message > ")
 try:
     amount = int(input("[+] amount of message (default 10) > "))
