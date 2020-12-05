@@ -3,7 +3,6 @@
 import smtplib
 import re
 from subprocess import call
-import threading
 
 class ENRAGE:
     def __init__(self):
