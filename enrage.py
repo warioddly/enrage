@@ -41,7 +41,6 @@ class ENRAGE:
                 self.count += 1
         except KeyboardInterrupt:
             self.actions(0)
-            self.actions(1)
         self.actions(1)
           
     def actions(self, act):
